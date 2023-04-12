@@ -6,13 +6,14 @@ mtn = 1
 glo = 2
 airtel = 3
 nmobile = 4
-choice = int(input(" PLEASE ENTER NETWORK PROVIDE ___"
-                   "********************"
-                   " ENTER 1 : MTN"
-                   " ENTER 2 : GLO"
-                   " ENTER 3 : AIRTEL"
-                   " ENTER 4 :  9MOBILE "
-                   "*********************"
+choice = int(input("\n"
+                   "\n********************\n"
+                   " ENTER 1 : MTN \n"
+                   " ENTER 2 : GLO \n"
+                   " ENTER 3 : AIRTEL \n"
+                   " ENTER 4 :  9MOBILE \n"
+                   " PLEASE ENTER NETWORK PROVIDE ___\n"
+                   "\n*********************"
                    ""))
 mb_100= 1
 mb_200 = 2
@@ -92,12 +93,12 @@ elif choice == glo :
 
 elif choice == airtel:
     data_bundle = int(input(""
-                            "*****************"
+                            "*****************/n"
                             " ENTER 1 : 100MB FOR 50 NGN"
                             "  ENTER 2 : 200MB FOR 100 NGN"
                             " ENTER  3 : 2GB FOR 500 NGN"
                             "  ENTER 4 : 20G FOR 5000 NGN"
-                            "*******************"
+                            "/n *******************"
                             ))
     if acc_details > 0:
         if data_bundle == mb_100:
@@ -115,7 +116,7 @@ elif choice == airtel:
 
 
         elif data_bundle == mb_2gb:
-        if acc_details >= 500:
+            if acc_details >= 500:
                 print(user_name, " CONGRATULATIONS UOU HAVE 2GB FOR A MONTH")
             else:
                 print(user_name, " INSUFFICIENT FUND . PLEASE RECHARGE ")
